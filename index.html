@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Color Extractor</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body class="bg-gray-200 p-4">
+    <div class="flex justify-center items-center h-screen">
+      <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h1 class="text-3xl font-bold mb-6 text-center">
+          Image Color Extractor
+        </h1>
+        <div class="image-input-container mb-6">
+          <label for="imageInput" class="block text-xl mb-2"
+            >Select an Image</label
+          >
+          <input type="file" id="imageInput" accept="image/*" class="hidden" />
+          <div class="text-gray-500">Click to select an image</div>
+          <img id="imagePreview" class="hidden mt-4" />
+        </div>
+        <button
+          id="getColorButton"
+          class="w-full py-3 bg-blue-500 text-white text-xl rounded hover:bg-blue-600 transition duration-200"
+        >
+          Get Color Code
+        </button>
+        <div id="colorCodes" class="grid grid-cols-5 gap-4 mt-6"></div>
+        <p class="text-center mt-6 text-gray-500">Made by Palak Khurana</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/colorthief@2.3.2/dist/color-thief.min.js"></script>
+  </body>
+</html>

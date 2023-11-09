@@ -1,0 +1,10 @@
+.image-input-container {
+  border: 2px dotted #4A90E2;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.color-code {
+  cursor: pointer;
+}
